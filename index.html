@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Stani Fashion Blog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+    body {font-family: "Open Sans"}
+</style>
+</head>
+<body class="w3-light-grey">
+
+    <!-- Navigation bar with social media icons -->
+    <div class="w3-bar w3-black w3-hide-small">
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+    </div>
+
+    <!-- w3-content defines a container for fixed size centered content
+         and is wrapped around the whole page content, except for the footer-->
+    <div class="w3-content" style="max-width: 1600px;">
+    
+    <!-- Header -->
+    <header class="w3-container w3-center w3-padding-48 w3-white">
+        <h1 class="w3-xxxlarge"><b>Stani Samaki</b></h1>
+        <h6>Welcome to the blog of <span class="w3-tag">Stani's World</span></h6>
+    </header>
+    
+    <!-- Image Header -->
+    <header class="w3-display-container w3-wide" id="home">
+        <img class="stani-image" src="https://images.unsplash.com/photo-1572705824045-3dd0c9a47945?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTZ8fGZhc2hpb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="Fashion Blog" width="1600"
+        height="1060">
+        <div class="w3-display-left w3-padding-large">
+            <h1 class="w3-text-white">Stani's</h1>
+            <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>FASHION BLOG</b></h1>
+            <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off"
+                onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button></h6>
+        </div>
+    </header>
+
+    <!-- Grid -->
+    <div class="w3-row w3-padding w3-border">
+
+     <!-- Blog entries -->
+     <div class="w3-col 18 s12">
+
+     <!-- Blog entry -->
+        <div class="w3-container w3-white w3-margin w3-padding-large">
+            <div class="w3-center">
+                <h3>TITLE HEADING</h3>
+                <h5>Title description, <span class="w3-opacity">December 15, 2022</span></h5>
+            </div>
+
+        <div class="w3-justify">
+            <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
+             alt="Girl"  style="width:100%" class="center" class="w3-padding-16">
+             <p><strong>Fashion</strong> Sunt in culpa qui officia deserunt mollit anim 
+                id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos 
+                qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
+                adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+             </p>
+             <p class="w3-left"><button class="w3-button w3-white w3-border"
+                onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i>Like</b></button></p>
+            <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo')"><b>Replies</b>
+            <span class="w3-tag w3-white">2</span></button></p>
+            <p class="w3-clear"></p>
+
+     <!-- Example of comment field -->
+        <div id="demo2" style="display:none">
+        <div class="w3-row">
+            <hr>
+            <div class="w3-col 12 m3">
+                <img src="https://images.unsplash.com/photo-1611485988300-b7530defb8e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" 
+                style="width: 90px;">
+            </div>
+            <div class="w3-col 110 m9">
+                <h4>Amber<span class="w3-opacity w3-medium">December 16, 2022, 8:20AM</span></h4>
+                <p>Love your blog page! Simply the best! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+            </div>
+        </div>
+        <div class="w3-row w3-margin-bottom">
+            <div class="w3-col 12 m3">
+                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fGZlbWFsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                style="width:90px;">
+            </div>
+            <div class="w3-col 110 m9">
+                <h4>Beverly<span class="w3-opacity w3-medium">December 16, 2022, 12:30PM</span></h4>
+                <P>Love This!!</P>
+            </div>
+           </div>
+          </div>
+        </div>
+       </div>
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+            <h3>TITLE HEADING</h3>
+            <h5>Title description,<span class="w3-opacity">December 16, 2022</span></h5>
+        </div>
+        <div class="w3-justify">
+            <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+            alt="runway" style="width: 100%" class="center">
+            <p><strong>Jumpers!!</strong> The trend for jumpers!</p>
+            <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. 
+                Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies
+                mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. 
+                Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunctions(this)"><b><i class="fa fa-thumbs-up"></i>Likes</b></button></p>
+            <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>Replies</b> <span class="w3-tag w3-white">2</span></button></p>
+            <p class="w3-clear"></p>
+        
+        <!-- Example of comment field -->
+        <div id="demo3" style="display:none">
+            <hr>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" 
+                style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Jane <span class="w3-opacity w3-medium">December 16, 2022, 7:22 PM</span></h4>
+                <p>That was a great runway show! Thanks for everything.</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njh8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" 
+                style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>John <span class="w3-opacity w3-medium">December 16, 2015, 10:32 PM</span></h4>
+                <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="https://images.unsplash.com/photo-1595565312451-23051ab0666c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzF8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                 style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Anja <span class="w3-opacity w3-medium">December 16, 2022, 9:12 PM</span></h4>
+                <p>Cant wait for the runway to start!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- END BLOG ENTRIES -->
+        </div>
+      
+      <!-- About/Information -->
+      <div class="w3-col 14">
+      <!-- About Card -->
+      <div class="w3-white w3-margin">
+        <img src="https://images.unsplash.com/photo-1547037579-f0fc020ac3be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGZhY2V8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" 
+        alt="Stani" style="width: 100%;" class="w3-grayscale" height="750px" width="600px">
+      <div class="w3-container w3-black">
+        <h4>My Name</h4>
+        <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? 
+            Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+            vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
+      </div>
+      </div>
+      <hr>
+
+      <!-- Posts -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+            <h4>Popular Posts</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+            <li class="w3-padding-16">
+                <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGRlbmltfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                alt="Image" class="w3-left w3-margin-right" style="width: 50px;">
+                <span class="w3-large">Denim </span>
+                <br>
+                <span>nisi ut aliquid ex ea commodi</span>
+            </li>
+            <li class="w3-padding-16">
+               <img src="https://images.unsplash.com/photo-1491245257527-395e9c480145?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHN3ZWF0ZXJ8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+               alt="Image" class="w3-left w3-margin-right" style="width: 50px;">
+               <span class="w3-large">Sweaters</span>
+               <br>
+               <span>Praes tinci sed</span>
+            </li>
+            <li class="w3-padding-16">
+                <img src="https://images.unsplash.com/photo-1597960194599-22929afc25b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHdvcmtzaG9wfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                alt="Image" class="w3-left w3-margin-right" style="width: 50px;">
+                <span class="w3-large">Workshop</span>
+                <br>
+                <span>Nisi ut aliquid</span>
+            </li>
+            <li class="w3-padding-16">
+                <img src="https://images.unsplash.com/photo-1560858001-2a568c6ea1d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHRyZW5kc3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+                alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:50px">
+                <span class="w3-large">Trends</span>
+                <br>
+                <span>Lorem ipsum dipsum</span>
+            </li>
+        </ul>
+      </div>
+      <hr>
+
+      <!-- Advertising -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+            <h4>Advertise</h4>
+        </div>
+        <div class="w3-container w3-white">
+            <div class="w3-container w3-display-container w3-light-grey w3-section" style="height: 200px;">
+            <span class="w3-display-middle">Your AD Here</span>
+            </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Tags -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Tags</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>
+            <span class="w3-tag w3-black w3-margin-bottom">Fashion</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Hats</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Norway</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sweaters</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Deals</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Accessories</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Jeans</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Trends</span>
+          </p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Inspiration -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+            <h4>Inspiration</h4>
+        </div>
+        <div class="w3-row-padding w3-white">
+            <div class="w3-col s6">
+                <p><img src="https://images.unsplash.com/flagged/photo-1553802922-2eb2f7f2c65b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjB8fGZhc2hpb258ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="clothes" style="width: 100%;"></p>
+                 <p><img src="https://images.unsplash.com/photo-1596725668413-d91baf68d9ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGZhc2hpb258ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="clothes" style="width: 100%;"></p>
+            </div>
+            <div class="w3-col s6">
+                <p><img src="https://images.unsplash.com/photo-1538329972958-465d6d2144ed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fGZhc2hpb258ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" 
+                    alt="Clothes" style="width:100%" class="w3-grayscale"></p>
+                <p><img src="https://images.unsplash.com/photo-1572251328450-19c5082bc582?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTU1fHxmYXNoaW9ufGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
+                    alt="Clothes" style="width:100%;"></p>
+            </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Subscribe -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+            <h4>Subscribe</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>Enter your email below and get notified on the latest blog posts</p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Subscribe</button></p>
+        </div>
+      </div>
+
+      </div>
+      <!-- END About/Intro Menu -->
+      </div>
+       <!-- END GRID -->
+    </div>
+    <!-- END w3-content -->
+    </div>
+    <!-- Subscribe Modal -->
+    <div id="subscribe" class="w3-modal w3-animate-opacity">
+      <div class="w3-modal-content" style="padding:32px">
+      <div class="w3-container w3-white">
+        <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right">
+        </i>
+        <h2 class="w3-wide">SUBSCRIBE</h2>
+        <P>Join my mailing list to receive updates on the latest blog posts and other things.</P>
+        <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+        <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom"
+         onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+      </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-dark-grey" style="padding: 32px">
+    <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To The Top</a>
+    <p>Powered By The InterNet</p>
+    </footer>
+
+    <script>
+      // Toggle between hiding and showing blog replies/comments
+      document.getElementById("myBtn").click();
+      function myFunction(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += "w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+
+      function likeFunction(x) {
+        x.style.fontWeight = "bold";
+        x.innerHTML = "✓ Liked";
+      }
+    </script>
+
+</body>
+</html>
